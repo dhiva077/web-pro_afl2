@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopsi - MeowCare</title>
+    <style>
+        body {
+            font-family: italic;
+            margin: 0;
+            padding: 0;
+            background-color: #49668b; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #f8f8f8; 
+            padding: 10px 10px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 90px; 
+            height: 90px;
+            border-radius: 50%; 
+            margin-right: 15px;
+        }
+
+        .logo span {
+            font-size: 24px; 
+            color: #333; 
+            font-family: italic; 
+        }
+
+        .navigation ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navigation li {
+            margin-left: 20px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #333; 
+            padding: 10px 10px;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            display: block;
+        }
+
+        .navigation a:hover {
+            background-color: #49668b;
+            color: white;
+        }
+
+        .content-container {
+            background-color: #f8f9fa; 
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            width: 90%;
+            max-width: 500px; 
+            margin-top: 20px; 
+        }
+
+        h2 {
+            color: #49668b; 
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            color: #424242; 
+            margin-bottom: 25px;
+            font-size: 0.95em;
+        }
+
+        .button-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .adoption-button {
+            background-color: #e9ecef; 
+            color: #333; 
+            border: 1px solid #f8f9fa;
+            border-radius: 15px;
+            padding: 8px 18px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .adoption-button:hover {
+            background-color: #eee;
+        }
+
+        .external-link-info {
+            color: #333;
+            font-size: 0.85em;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            .content-container {
+                padding: 20px;
+                width: 95%;
+                border-radius: 8px;
+            }
+
+            h2 {
+                font-size: 1.3em;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 0.9em;
+                margin-bottom: 20px;
+            }
+
+            .adoption-button {
+                font-size: 0.9em;
+                padding: 10px 15px;
+                border-radius: 6px;
+            }
+
+            .external-link-info {
+                font-size: 0.8em;
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo MeowCare">
+            <span>MeowCare</span>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="donasi.html">Donasi</a></li>
+                <li><a href="adopsi.html">Adopsi</a></li>
+                <li><a href="edukasi.html">Edukasi</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content-container">
+        <h2>Siap Memberikan Rumah Baru?</h2>
+        <p>Sebelum melanjutkan, mohon pelajari terlebih dahulu syarat dan ketentuan adopsi kami.</p>
+        <div class="button-wrapper">
+            <a href="syarat-ketentuan.html" class="adoption-button">Syarat &amp; Ketentuan</a>
+            <a href="formulir-adopsi.html" class="adoption-button">Formulir Adopsi Kucing</a>
+        </div>
+        <p class="external-link-info">Dengan mengklik tombol di atas, Anda akan diarahkan ke halaman eksternal.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Donasi - MeowCare</title>
+  <style>
+    body {
+      background-color: #49668b;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background-color: #49668b;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    h2 {
+      color: #fff8ef;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #fff8ef;
+      font-style: italic;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #fff8ef;
+      border-radius: 12px;
+      box-shadow: inset 1px 1px 4px rgba(0,0,0,0);
+      font-size: 16px;
+    }
+
+    .footer-text {
+      text-align: center;
+      margin-top: 30px;
+      font-weight: bold;
+      color: #fff8ef;
+      font-size: 18px;
+    }
+
+    .footer-text::after {
+      content: "🐾";
+      margin-left: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>DATA PENDONASI</h2>
+    <form action="thanks.html" method="POST">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="tujuan">Donasi Akan Digunakan Untuk</label>
+<select id="tujuan" name="tujuan" required style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #49668b; border-radius: 18px; box-shadow: inset 1px 1px 8px rgba(0, 0, 0, 0); font-size: 16px;">
+  <option value="">-- Pilih Tujuan Donasi --</option>
+  <option value="Pengobatan kucing sakit">Pengobatan kucing sakit</option>
+  <option value="Obat cacing & kutu">Obat cacing & kutu</option>
+  <option value="Sterilisasi">Sterilisasi (termasuk rawat inap & antar-jemput)</option>
+  <option value="Grooming">Grooming</option>
+</select>
+
+
+      <label for="nominal">Nominal Yang DIdonasikan</label>
+      <input type="text" id="nominal" name="nominal" required>
+
+      <button type="submit" 
+  style="
+    background-color: #fff8ef; 
+    color: #3b2e1d; 
+    border: none; 
+    padding: 12px 24px; 
+    border-radius: 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    box-shadow: 2px 2px 8px rgba(0,0,0,0);
+    transition: 0.3s ease;
+  "
+  onmouseover="this.style.backgroundColor='#a0b0f0'"
+  onmouseout="this.style.backgroundColor='#b4c4f9'"
+>
+  Kirim Donasi
+</button>
+    </form>
+
+    <div class="footer-text">
+      Mari bersama ciptakan kehidupan yang lebih baik bagi kucing jalanan!
+    </div>
+  </div>
+
+</body>
+</html>

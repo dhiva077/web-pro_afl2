@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - MeowCare</title>
+    <style>
+        body {
+            font-family: italic;
+            margin: 0;
+            padding: 0;
+            background-color: #49668b; 
+        }
+
+        .header {
+            background-color: #f8f8f8; 
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 90px; 
+            height: 90px;
+            border-radius: 50%; 
+            margin-right: 15px;
+        }
+
+        .logo span {
+            font-size: 24px; 
+            color: #333; 
+            font-family: italic; 
+        }
+
+        .navigation ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navigation li {
+            margin-left: 20px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #333; 
+            padding: 10px 10px;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            display: block;
+        }
+
+        .navigation a:hover {
+            background-color: #49668b;
+            color: white;
+        }
+
+        .container {
+            flex-grow: 1; 
+            padding: 10px; 
+            max-width: 960px;
+            margin: 10px auto; 
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto; 
+            gap: 10px; 
+            overflow-y: auto;
+        }
+
+        .profile-card {
+            padding: 20px; 
+            border-radius: 10px;
+            background-color: white;
+            display: flex; 
+            align-items: center; 
+            gap: 30px; 
+        }
+
+        .profile-image {
+            width: 150px;
+            border-radius: 100%;
+            overflow: hidden;
+            margin-right: 20px; 
+            flex-shrink: 0; 
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .profile-info {
+            text-align: left; 
+            flex-grow: 1; 
+        }
+
+        .profile-info h2 {
+            color: #49668b;
+            margin-bottom: 5px; 
+            font-size: 1.4em; 
+        }
+
+        .profile-info p {
+            font-size: 1em; 
+            margin-bottom: 10px; 
+            line-height: 1.6; 
+        }
+
+        @media (max-width: 768px) {
+            .profile-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .profile-image {
+                width: 120px;
+                height: 120px;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .profile-info {
+                text-align: center;
+            }
+        }
+
+        .meowcare-story-card {
+            padding: 20px; 
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        .meowcare-story-card h2 {
+            color: #49668b;
+            margin-top: 0;
+            margin-bottom: 8px; 
+            font-size: 1.4em; 
+        }
+
+        .meowcare-story-card p {
+            font-size: 1em; 
+            margin-bottom: 10px; 
+            line-height: 1.6; 
+        }
+
+        .contact-info-card {
+            padding: 20px;
+            border-radius: 5px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .contact-info-card h2 {
+            color: #49668b;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+
+        .contact-link {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            margin-bottom: 10px;
+        }
+
+        .contact-icon-link {
+            display: flex; 
+            align-items: center;
+            text-decoration: none;
+            color: inherit; 
+        }
+
+        .contact-icon {
+            height: 24px; 
+            width: auto; 
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .contact-link span {
+            font-size: 1em;
+        }
+
+        @media (max-width: 768px) {
+            .profile-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo MeowCare">
+            <span>MeowCare</span>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="donasi.html">Donasi</a></li>
+                <li><a href="adopsi.html">Adopsi</a></li>
+                <li><a href="edukasi.html">Edukasi</a></li>
+                <li><a href="aboutMe.html" class="active">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-image">
+                <img src="DHIVA.JPG" alt="Dhiva Kesuma Pertiwi">
+            </div>
+            <div class="profile-info">
+                <h2>DHIVA KESUMA PERTIWI</h2>
+                <p>Halo! Saya Dhiva Kesuma Pertiwi, mahasiswa Informatika semester 2 di Universitas Ciputra Makassar dengan minat khusus di Artificial Intelligence. Saya selalu tertarik dengan teknologi dan bagaimana inovasi dapat menciptakan solusi cerdas untuk berbagai permasalahan.</p>
+                <p>Di luar dunia coding, saya adalah pecinta kucing dan aktif dalam berbagai organisasi, mengasah keterampilan kepemimpinan, kreativitas, dan problem-solving. Bagi saya, setiap hari adalah kesempatan untuk belajar, berkembang, dan membuat dampak positif.</p>
+            </div>
+        </div>
+
+        <div class="meowcare-story-card">
+            <h2>Tentang MeowCare</h2>
+            <p>Sebagai seorang pecinta kucing, saya merasa prihatin dengan kondisi kucing jalanan yang sering kali tidak terurus, sakit, dan terus bertambah populasinya karena kurangnya sterilisasi. Oleh karena itu, saya membuat MeowCare sebagai platform untuk mengajak para street feeder dan pecinta kucing lainnya untuk berkontribusi melalui donasi. Dengan bantuan ini, kita bisa bersama-sama memberi pengobatan, sterilisasi, serta perawatan yang lebih baik bagi kucing-kucing jalanan, agar mereka dapat hidup lebih sehat dan sejahtera.</p>
+            <p>Dengan Meow Care, saya berharap semakin banyak orang yang peduli terhadap kesejahteraan kucing jalanan dan bersama-sama kita bisa memberikan mereka kehidupan yang lebih baik.</p>
+        </div>
+
+        <div class="contact-info-card">
+            <p style="font-size: 0.9em; font-style: italic; margin-bottom: 15px;">Tertarik untuk berkolaborasi atau sekadar berdiskusi?<br>Silakan hubungi saya melalui kontak di bawah ini!</p>
+            <h2>CONTACT</h2>
+            <div class="contact-link">
+                <a href="https://instagram.com/dhvprtwii" target="_blank" class="contact-icon-link">
+                    <img src="instagram.jpg" alt="Instagram" class="contact-icon">
+                    <span>@dhvprtwii</span>
+                </a>
+            </div>
+            <div class="contact-link">
+                <a href="mailto:dhivakesuma@gmail.com" class="contact-icon-link">
+                    <img src="email.jpg" alt="Email" class="contact-icon">
+                    <span>dhivakesuma@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
